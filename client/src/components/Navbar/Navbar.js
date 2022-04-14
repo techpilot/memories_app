@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux"
 import { AppBar, Avatar, Typography, Toolbar, Button } from "@material-ui/core"
 import decode from "jwt-decode"
 
-import memories from "../../images/memories.png"
+import memoriesLogo from "../../images/memories-Logo.png"
 import useStyles from "./styles"
 
 const Navbar = () => {
@@ -38,7 +38,7 @@ const Navbar = () => {
     <AppBar className={classes.appBar} position="static" color="inherit">
       <div className={classes.brandContainer}>
         <Typography component={Link} to="/" className={classes.heading} variant="h3" align="center">Memories</Typography>
-        <img className={classes.image} src={memories} alt="memories" height="50" />
+        <img className={classes.image} src={memoriesLogo} alt="memories" height="50" />
       </div>
       <Toolbar className={classes.toolbar}>
         {user ? (
