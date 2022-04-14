@@ -31,6 +31,7 @@ const Auth = () => {
       dispatch(signup(formData, history));
     } else {
       dispatch(signin(formData, history));
+      console.log(formData);
     }
   };
   
@@ -43,7 +44,7 @@ const Auth = () => {
   // handles toggling of the show password functionality
   const switchMode = () => {
     setIsSignup((prevIsSignup) => !prevIsSignup);
-    handleShowPassword(false)
+    setShowPassword(false)
   };
 
   // google login auth successful
